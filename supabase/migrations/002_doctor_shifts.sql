@@ -20,6 +20,7 @@ create table if not exists public.doctor_shifts (
   )
 );
 
+
 create index if not exists doctor_shifts_doctor_date_idx on public.doctor_shifts(doctor_id, work_date);
 create index if not exists doctor_shifts_doctor_range_idx on public.doctor_shifts(doctor_id, starts_at, ends_at);
 
